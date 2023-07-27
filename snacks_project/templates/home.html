@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <h1 class=text-3xl text-blue-800>Tell Me About the Fun Kings Golf Shoes!</h1>
+  <img src="{% static './img/sigil.jpg' %}" class="h-500px mr-3" alt="sigil" />
+
+{# {% for snacks in snacks %} #}
+   <h2>Name: {{ thing.name }}</h2>
+   <p>Description: {{ thing.description}}</p>
+{# {% endfor %}#}
+
+{% endblock content %}

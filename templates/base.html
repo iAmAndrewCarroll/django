@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>I Love Cheesy Poofs</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %} " >
+</head>
+<nav>
+  <ul>
+    <li><a href="{% url 'home' %} ">Home</a></li>
+    <li><a href="{% url 'snack_list' %} ">Snack List</a></li>
+    <li><a href="{% url 'snack_detail' pk=1 %} ">Snack Detail</a></li>
+  </ul>
+</nav>
+<body>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
